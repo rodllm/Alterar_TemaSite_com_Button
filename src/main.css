@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --green:#00ffaa;
+    --white:#ffffff;
+    --black:#000000;
+}
+* {
+    color: var(--fontColor);
+    font-family: Roboto;
+}
+body {
+    background-color: var(--bg);
+}
+
+ul {
+    font-family: Montserrat;    
+}
+li {
+    list-style: circle;
+}
+
+.btn{
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    cursor: pointer;
+	transition: 0.2s;
+}
+.btn:focus {
+    outline-style: none;
+}
+.btn:hover {
+    scale: 1.1;
+}
+.list {
+    list-style: square;
+}
+/* #msg {
+    font-family: monospace;
+} */
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
